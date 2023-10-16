@@ -7,7 +7,8 @@ public class Calculator {
 
        // add();
         //subtract();
-        Multiply();
+      //  Multiply();
+        Divide();
     }
 
     public static void add()
@@ -47,6 +48,18 @@ public class Calculator {
         int secondNumber = inputs.nextInt();
 
         int total = firstNumber * secondNumber;
+        System.out.println("Total is " + total);
+    }
+    public static void Divide()
+    {
+        System.out.println(" Please enter your first Number: ");
+        Scanner inputs = new Scanner(System.in);
+        int firstNumber = inputs.nextInt();
+
+        System.out.println(" Please enter your second Number:");
+        int secondNumber = inputs.nextInt();
+
+        int total = firstNumber / secondNumber;
         System.out.println("Total is " + total);
     }
 }
